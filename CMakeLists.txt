@@ -5,6 +5,11 @@ project(catalyst)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
+file(COPY
+    "catalyst.hpp"
+    DESTINATION ${CMAKE_BINARY_DIR}/include
+)
+
 add_library(sha3 STATIC
     "sha3/sha3_internal.cpp"
     "sha3/sha3.cpp"

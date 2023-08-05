@@ -38,7 +38,7 @@ target_link_libraries(devcatalyst sha3)
 target_link_libraries(catalyst devcatalyst)
 
 include(GNUInstallDirs)
-set(CATALYST_HEADERS_INSTALL_DIR ${CMAKE_INSTALL_FULL_DATADIR}/catalyst)
+set(CATALYST_HEADERS_INSTALL_DIR ${CMAKE_INSTALL_FULL_INCLUDEDIR}/catalyst)
 
 install(TARGETS
     devcatalyst catalyst

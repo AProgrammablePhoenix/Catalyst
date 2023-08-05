@@ -3,7 +3,7 @@
 
 #include <boost/multiprecision/cpp_int.hpp>
 
-#include "../catalyst.hpp"
+#include "catalyst_internal.hpp"
 
 namespace {
     size_t get_bits(const bmp::cpp_int& n) {

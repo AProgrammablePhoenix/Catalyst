@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#include "../catalyst.hpp"
+#include "catalyst_internal.hpp"
 #include "../sha3/sha3.hpp"
 
 uint32_t catalyst::sigmas::sigma0(uint32_t x) {

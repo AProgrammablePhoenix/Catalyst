@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.22)
 
 project(catalyst)
 
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+
 add_library(sha3 STATIC
     "sha3/sha3_internal.cpp"
     "sha3/sha3.cpp"
@@ -28,3 +31,14 @@ target_compile_features(catalyst PUBLIC cxx_std_23)
 
 target_link_libraries(devcatalyst sha3)
 target_link_libraries(catalyst devcatalyst)
+
+include(GNUInstallDirs)
+set(CATALYST_HEADERS_INSTALL_DIR ${CMAKE_INSTALL_FULL_DATADIR}/catalyst)
+
+install(TARGETS
+    devcatalyst catalyst
+)
+
+install(FILES "catalyst.hpp"
+    DESTINATION CATALYST_HEADERS_INSTALL_DIR
+)

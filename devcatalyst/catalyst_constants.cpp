@@ -5,7 +5,7 @@
 #include <vector>
 #include <array>
 
-#include "../catalyst.hpp"
+#include "catalyst_internal.hpp"
 #include "../sha3/sha3.hpp"
 
 namespace {

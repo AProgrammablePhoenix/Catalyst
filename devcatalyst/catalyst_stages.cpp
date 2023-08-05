@@ -6,6 +6,7 @@
 #include <array>
 #include <vector>
 
+#include "catalyst_internal.hpp"
 #include "../catalyst.hpp"
 
 using namespace catalyst::constants;

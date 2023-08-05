@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#include "../catalyst.hpp"
+#include "catalyst_internal.hpp"
 #include "../sha3/sha3.hpp"
 
 std::vector<uint8_t> catalyst::Xor::generate_transform(uint8_t key_data[], uint64_t length, uint64_t n) {

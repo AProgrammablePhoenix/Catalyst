@@ -36,6 +36,11 @@
     ```
  5. Finally, just link the library (**devcatalyst**) to your project, and you are ready to go !
 
+ 6. (optional) If you want to easily use the **catalyst** command, or to link the **devcatalyst** library to your project, then you should consider installing the project onto your system by running :
+ ```bash
+   sudo make install
+ ```
+
 ## How to build ? - For direct use
  Follow the steps of **How to build ? - For development**, use step **3.2** instead of **3.1**, ignore step **5.**
 

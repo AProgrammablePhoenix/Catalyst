@@ -24,7 +24,7 @@ namespace {
         { "-dxf", "decrypts file with specified key, data is the name of the file to encrypt, key is hexadecimal" }
     };
     [[noreturn]] static void print_usage() {
-        static const std::string str = "\nUsage: catalyst [-mt <n>] <-e[x][f]|-d[x][f]> <data> <key>\n";
+        static const std::string str = "\nUsage: catalyst <-e[x][f]|-d[x][f]> <data> <key>\n";
         std::string msg = str;
         for (const auto& m : modes_help) {
             msg += m.first + ":" + m.second + "\n";

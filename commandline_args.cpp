@@ -13,15 +13,15 @@ namespace {
         "-d", "-dx", "-df", "dxf"
     };
     static const std::vector<std::pair<std::string, std::string>> modes_help = {
-        { "-e",   "encrypts data with specified key, data and key are both strings" },
-        { "-ex",  "encrypts data with specified key, data and key are both hexadecimal" },
-        { "-ef",  "encrypts file with specified key, data is the name of the file to encrypt, key is a string" },
-        { "-exf", "encrypts file with specified key, data is the name of the file to encrypt, key is hexadecimal" },
+        { "-e  ",   "encrypts data with specified key, data and key are both strings" },
+        { "-ex ",  "encrypts data with specified key, data and key are both in hexadecimal" },
+        { "-ef ",  "encrypts file with specified key, data is the name of the file to encrypt, key is a string" },
+        { "-exf", "encrypts file with specified key, data is the name of the file to encrypt, key in hexadecimal" },
         
-        { "-d",   "decrypts data with specified key, data and key are both strings" },
-        { "-dx",  "decrypts data with specified key, data and key are both hexadecimal" },
-        { "-df",  "decrypts file with specified key, data is the name of the file to encrypt, key is a string" },
-        { "-dxf", "decrypts file with specified key, data is the name of the file to encrypt, key is hexadecimal" }
+        { "-d  ",   "decrypts data with specified key, data and key are both strings" },
+        { "-dx ",  "decrypts data with specified key, data and key are both in hexadecimal" },
+        { "-df ",  "decrypts file with specified key, data is the name of the file to decrypt, key is a string" },
+        { "-dxf", "decrypts file with specified key, data is the name of the file to decrypt, key in hexadecimal" }
     };
     [[noreturn]] static void print_usage() {
         static const std::string str = "\nUsage: catalyst <-e[x][f]|-d[x][f]> <data> <key>\n";
